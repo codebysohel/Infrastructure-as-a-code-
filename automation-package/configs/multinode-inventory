@@ -1,0 +1,26 @@
+[control]
+controller01
+controller02
+controller03
+
+[network]
+network01
+network02
+
+[compute]
+compute01
+compute02
+
+[monitoring]
+controller01
+
+[storage]
+storage01
+storage02
+
+[all:vars]
+ansible_user=kolla
+ansible_become=True
+
+[deployment]
+localhost ansible_connection=local
